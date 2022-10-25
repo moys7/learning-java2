@@ -6,7 +6,8 @@ package test.mypac;
  * 2. static or non static 
  * 3. 리턴 타입
  * 4. 메소드명
- * 5. 메소드에 전달하는 인자의 객수와 데이터 타입
+ * 5. 
+와 데이터 타입
  */
 public class MyObject {
 	public void walk() {
