@@ -6,8 +6,7 @@ package test.mypac;
  * 2. static or non static 
  * 3. 리턴 타입
  * 4. 메소드명
- * 5. 
-와 데이터 타입
+ * 5. 메소드에 전달하는 인자의 객수와 데이터타입
  */
 public class MyObject {
 	public void walk() {
@@ -50,7 +49,7 @@ public class MyObject {
 			car.drive();
 	}
 	
-	//3개의 type 을 메소드의 인잘 전달받는 메소드
+	//3개의 type 을 메소드의 인자를 전달받는 메소드
 	public void doSomething(int num, String msg, Car c) {
 		System.out.println("무언가 작업중");
 	}
