@@ -43,16 +43,12 @@ public class QuizMain5 {
 				}
 				nums[i]=ranNum;
 			}
-			//개행
 			System.out.println();
 			
-			//3개가 모두 같은지 여부
+
 			boolean isEqual= nums[0] == nums[1] && nums[1] == nums[2];
-			//2개가 같은지 여부
 			boolean istwoEqual= nums[0] == nums[1] || nums[1] == nums[2] ||  nums[0] == nums[2];
-			/*
-			 * 점수 10,5,0
-			 */
+
 			if (isEqual) {
 				System.out.println("     10점!");
 			}else if(istwoEqual) {
