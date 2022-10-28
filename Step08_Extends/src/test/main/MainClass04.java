@@ -9,6 +9,7 @@ public class MainClass04 {
 		Object p3=new HandPhone();		
 		//Object type 변수에 담긴 값을 Phone 타입 변수에 담기
 		Phone p2=(Phone)p3; //casting 연산자를 이용하면 가능하다.	
+		//더 넓은 범위 Object에서 좁은 범위 Phone에 넣으려니 캐스팅
 		HandPhone p1=(HandPhone)p3; //casting 연산자를 이용하면 가능하다.
 		
 				//무작정 캐스팅하면 안된다. 그 타입이 아닌데 강제로 입히면 실행시 에러난다.
