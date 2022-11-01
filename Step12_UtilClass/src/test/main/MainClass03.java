@@ -3,7 +3,7 @@ package test.main;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MaunClass03 {
+public class MainClass03 {
 	public static void main(String[] args) {
 		//정수를 저장할 수 있는 ArrayList객체를 생성해서 참조값을 List인터페이스 타입의 지역변수 nums에 담기		
 		List<Integer> nums=new ArrayList<>();
