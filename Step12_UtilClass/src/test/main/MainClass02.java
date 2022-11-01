@@ -6,14 +6,14 @@ import java.util.function.Consumer;
 
 public class MainClass02 {
 	public static void main(String[] args) {
-		//ArrayList 객체를 생성해서 List 인터페이스 탕비 지역변수에 참조값 담기
+		//ArrayList 객체를 생성해서 List 인터페이스 names 지역변수에 참조값 담기
 		List<String> names=new ArrayList<>();
 		names.add("김구라");
 		names.add("해골");
 		names.add("원숭이");
 		names.add("주뎅이");
 		names.add("덩어리");
-		//반복문 돌면서 친구이름을 순서대로 콘솔창에 출력해보기(4가지로 다르게 했다.)
+		//반복문 돌면서 친구이름을 순서대로 콘솔창에 출력해보기(5가지로 다르게 했다.)
 		for(int i=0; i<names.size(); i++) {
 	         System.out.println(names.get(i));
 	      };
