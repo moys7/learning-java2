@@ -1,4 +1,4 @@
-package frame06;
+package frame07;
 
 import java.awt.BorderLayout;
 import java.awt.Component;
@@ -12,10 +12,7 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 public class MyFrame extends JFrame implements ActionListener{
-	//필드
-	JButton sendBtn;
-	JButton deleteBtn;
-	
+
 	//생성자
 	public MyFrame(String title) {
 		super(title);
@@ -23,12 +20,17 @@ public class MyFrame extends JFrame implements ActionListener{
 		setBounds(100, 100, 500, 500);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLayout(new FlowLayout());
-		//객체 생성해서 참조값을 필에 저장
-		this.sendBtn=new JButton("전송");
+
+		JButton sendBtn=new JButton("전송");
 		add(sendBtn);
+		//버튼 액션 command를 설정
+		sendBtn.setActionCommand("send");
 		
-		deleteBtn=new JButton("삭제");
+		
+		
+		JButton deleteBtn=new JButton("삭제");
 		add(deleteBtn);
+		deleteBtn.setActionCommand("delete");
 	
 		sendBtn.addActionListener(this);
 		deleteBtn.addActionListener(this);
@@ -37,7 +39,7 @@ public class MyFrame extends JFrame implements ActionListener{
 	
 	
 	public static void main(String[] args) {
-		MyFrame f=new MyFrame("나의 프레임6");
+		MyFrame f=new MyFrame("나의 프레임7");
 		f.setVisible(true);
 	}
 	/*
@@ -48,14 +50,11 @@ public class MyFrame extends JFrame implements ActionListener{
 	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		//눌ㄹ러진 버튼의 참조값 얻어내기
-		Object which=e.getSource();
-		
-		if(which==sendBtn) {
+		//눌러진 버튼의 액션 command 값을 읽어온다.
+		String command=e.getActionCommand();
+		if(command.equals("send")) {
 			JOptionPane.showMessageDialog(this, "전송합니다.");
-		}else if(which==deleteBtn) {
+		}else if(command.equals("delete"))
 			JOptionPane.showMessageDialog(this, "삭제합니다.");
-		}
-		
 	}
 }
