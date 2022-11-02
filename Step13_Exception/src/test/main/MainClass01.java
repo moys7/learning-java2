@@ -14,7 +14,7 @@ public class MainClass01 {
 			double num=Double.parseDouble(inputNum);
 			//입력한 숫자에 100을 더한다.
 			double result=num+100;
-			System.out.println("입력한 숫자 + 100"+ result);
+			System.out.println("입력한 숫자 + 100 : "+ result);
 		}catch(NumberFormatException nfe) {
 			/*
 			 * 실행 스텍에서 일어난 일을 콘솔창에 출력하기
